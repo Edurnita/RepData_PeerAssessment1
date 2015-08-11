@@ -45,7 +45,7 @@ Secondly, I make a histogram of the total number of steps taken each day.
 barplot(total_steps_perday$steps, names.arg=total_steps_perday$date, col="blue", main="Histogram of the total number of steps taken each day", xlab="Date", ylab="Total steps")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
 
 Thirdly, I calculate and report the mean and median of the total number of steps taken per day
 
@@ -76,7 +76,7 @@ Second, I make a time series plot of the 5-minute interval (x-axis) and the aver
 plot(mean_steps_perday$interval,mean_steps_perday$steps,type="l",main="5-minute interval by the average of steps taken across all days",xlab="5-minutes intervals", ylab="Mean steps")
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7.png) 
 
 Thrid, Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -137,7 +137,7 @@ head(total_steps_perday2)
 barplot(total_steps_perday2$steps, names.arg=total_steps_perday2$date, col="blue", main="Histogram of the total number of steps taken each day (imputed)", xlab="Date", ylab="Total steps")
 ```
 
-![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png) 
+![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11.png) 
 
 ```r
 mean_steps2 <- mean(total_steps_perday2$steps)
@@ -180,5 +180,5 @@ plot(set1$interval,set1$steps,type="l",main="WEEKDAY",xlab="5-minutes intervals"
 plot(set2$interval,set2$steps,type="l",main="WEEKEND",xlab="5-minutes intervals", ylab="Mean steps")
 ```
 
-![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13-1.png) 
+![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13.png) 
 
